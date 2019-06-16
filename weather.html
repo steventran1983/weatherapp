@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
-<body>
-    <div id="serach-container">
-        <input type="text" class="searchControl" id="search-input" placeholder="Your Zip or City">
-        <button class="serachControl" id="searchbtn">Search</button>
+
+<body style="color:white;">
+    <div class="search">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <button class="btn btn-primary" type="button" id="searchbtn">Search</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Enter Zipcode or City name" id="search-input">
     </div>
-    <div id="weather-contain">
-        <div id="weatherDescription">
+</div>
+
+
+    <div class="weathercontain" id="weathercontain">
+        <div class="weatherDescription" id="weatherDescription">
             <h1 id="cityName"></h1>
-            <div id="weatherMain">
+            <div id="weatherMain" class="weatherMain">
                 <div id="temperture"></div>
                 <div id="weatherdescriptionheader"></div>
-                <div id="icon"><image id="weathericon"></image></div>
+                <div id="icon">
+                    <image id="weathericon"></image>
+                </div>
             </div>
-            <hr>
+            <hr class="hr">
             <div class="bottomdetail" id="wind"></div>
             <div class="bottomdetail" id="huminity"></div>
-
         </div>
     </div>
-
     <script src="myscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
